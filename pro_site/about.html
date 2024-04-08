@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Про нас</title>
+	<link rel="stylesheet" href="css/bootstrap3.3.7.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/Chart.js"></script>
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">PR<i class="fa fa-circle"></i>SITE</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Главная</a></li>
+					<li class="active"><a href="about.html">Про нас</a></li>
+					<li><a href="services.html">Сервисы</a></li>
+					<li><a href="works.html">Работы</a></li>
+					<li><a href="mail.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4>Узнать больше о нас</h4>
+					<p>МЫ КРУТЫЕ ЛЮДИ</p>
+				</div>
+      </div>
+		</div>
+	</div>
+
+	<div class="container w">
+		<div class="row centered">
+			<br><br>
+			<div class="col-lg-3">
+				<img src="img/pic.jpg" alt="" class="img-circle" width="110" height="110" alt="">
+				<h4>Frank Lapard</h4>
+				<p>Мы считаем, что идеи исходят от всех и повсюду.</p>
+			</div>
+			<div class="col-lg-3">
+				<img src="img/pic2.jpg" alt="" class="img-circle" width="110" height="110" alt="">
+				<h4>David Wright</h4>
+				<p>Существует множество вариантов классных работ, но большинство из них претерпело те или иные изменения.</p>
+			</div>
+			<div class="col-lg-3">
+				<img src="img/pic3.jpg" alt="" class="img-circle" width="110" height="110" alt="">
+				<h4>Mark Milestone</h4>
+				<p>Здесь каждый в стенах нашего агентства — самостоятельный дизайнер.</p>
+			</div>
+			<div class="col-lg-3">
+				<img src="img/pic4.jpg" alt="" class="img-circle" width="110" height="110" alt="">
+				<h4>Tania Tissen</h4>
+				<p>Эти истины движут нами, мотивируют и в конечном итоге помогают нам по-новому определить силу дизайна.</p>
+			</div>
+		</div>
+		<div class="row centered">
+			<div class="col-lg-3">
+				<p><a href="#">@Frank_Black</a></p><br>
+			</div>
+			<div class="col-lg-3">
+				<p><a href="#">@David_Wright</a></p><br>
+			</div>
+			<div class="col-lg-3">
+				<p><a href="#">@Mark_Milestone</a></p><br>
+			</div>
+			<div class="col-lg-3">
+				<p><a href="#">@Tania</a></p><br>
+			</div>
+		</div>
+	</div>
+
+	<div id="dg">
+		<div class="container">
+			<div class="row centered">
+				<h4>НАШИ НАВЫКИ</h4>
+				<br>
+				
+				<div class="col-lg-3">
+					<canvas id="canvas" height="130" width="130"></canvas>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 70,
+									color:"#3498db"
+								},
+								{
+									value : 30,
+									color : "#ecf0f1"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<p><b>Дизайн и бренд</b></p>
+					<p><small>Создайте логотип и разработайте уникальный фирменный стиль за 10 минут. Наши инструменты для 
+						создания логотипов и брендинга сделают ваш бренд заметным и помогут развитию вашего бизнеса.</small></p>
+				</div>
+
+				<div class="col-lg-3">
+					<canvas id="canvas2" height="130" width="130"></canvas>
+					<br>
+					<script>
+						var doughnutData = [
+							{
+								value: 90,
+								color: "#3498db"
+							},
+							{
+								value: 10,
+								color: "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<p><b>Веб-разработка</b></p>
+					<p><small>Существует множество вариаций отрывков Lorem Ipsum, но большинство из них претерпело те или иные 
+						изменения.</small></p>
+				</div>
+
+				<div class="col-lg-3">
+					<canvas id="canvas3" height="130" width="130"></canvas>
+					<br>
+					<script>
+						var doughnutData = [
+							{
+								value: 50,
+								color: "#3498db"
+							},
+							{
+								value: 50,
+								color: "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<p><b>SEO-услуги</b></p>
+					<p><small>Полный спектр услуг онлайн-маркетинга. Как понять намерения поисковика и использовать их для 
+						повышения рейтинга SEO. Умные SEO-кампании построены на понимании того, как ваша аудитория ищет вашу 
+						отрасль, продукты и услуги.</small></p>
+				</div>
+
+				<div class="col-lg-3">
+					<canvas id="canvas4" height="130" width="130"></canvas>
+					<br>
+					<script>
+						var doughnutData = [
+							{
+								value: 80,
+								color: "#3498db"
+							},
+							{
+								value: 20,
+								color: "#ecf0f1"
+							}
+						];
+						var myDoughnut = new Chart(document.getElementById("canvas4").getContext("2d")).Doughnut(doughnutData);
+					</script>
+					<p><b>Печать</b></p>
+					<p><small>От печати и копирования до упаковки, рассылки и доставки — мы поможем вам доставить уникальные 
+						маркетинговые материалы и рекламную продукцию для привлечения потенциальных клиентов.</small></p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="r">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h4>МЫ РАССКАЗЧИКИ. БРЕНДЫ — НАШИ ПРЕДМЕТЫ. ДИЗАЙН — НАШ ГОЛОС.</h4>
+					<p>Мы считаем, что идеи исходят от всех и повсюду. Здесь каждый в стенах нашего агентства — самостоятельный 
+						дизайнер. И есть несколько принципов, в которые мы верим и в которые должен верить каждый — наше дизайнерское 
+						ремесло. Эти истины движут нами, мотивируют и в конечном итоге помогают нам по-новому определить силу дизайна.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="f">
+	<div class="container">
+		<div class="row centered">
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-vk"></i></a>
+		</div>
+	</div>
+</div>
+
+
+	
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.4.0.0.min.js"></script>
+</body>
+</html>
